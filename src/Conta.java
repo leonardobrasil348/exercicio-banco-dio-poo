@@ -12,16 +12,7 @@ public class Conta {
 
     private boolean situacaoChequeEspecial = false;
 
-    /* Construtor pra teste
-    Conta(String nomeDoUsuario, String cpfDoUsuario, String senhaDoUsuario, double depositoInicialDoUsuario){
-        this.nomeDoUsuario = nomeDoUsuario;
-        this.cpfDoUsuario = cpfDoUsuario;
-        this.senhaDoUsuario = senhaDoUsuario;
-        this.depositoInicialDoUsuario = depositoInicialDoUsuario;
-    } */
 
-
-    // Nome do utilizador
     public String getNomeDoUsuario() {
         return nomeDoUsuario;
     }
@@ -30,7 +21,6 @@ public class Conta {
         this.nomeDoUsuario = nomeDoUsuario;
     }
 
-    // CPF do usuário
     public String getCpfDoUsuario() {
         return cpfDoUsuario;
     }
@@ -39,7 +29,6 @@ public class Conta {
         this.cpfDoUsuario = cpfDoUsuario;
     }
 
-    // Senha do usuário
     public String getSenhaDoUsuario() {
         return senhaDoUsuario;
     }
@@ -48,7 +37,6 @@ public class Conta {
         this.senhaDoUsuario = senhaDoUsuario;
     }
 
-    // Depósito inicial do usuário
     public double getDepositoInicialDoUsuario() {
         return depositoInicialDoUsuario;
     }
@@ -57,7 +45,6 @@ public class Conta {
         this.depositoInicialDoUsuario = depositoInicialDoUsuario;
     }
 
-    // Cálculo do cheque especial no momento da criação da conta
     public void calculoChequeEspecial(){
         if (getDepositoInicialDoUsuario() <= 500){
             this.chequeEspecial = 50;

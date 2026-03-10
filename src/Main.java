@@ -47,7 +47,6 @@ public class Main {
                             """);
 
                     System.out.print("Insira seu CPF: ");
-                    // Atenção
                     cpf = scan.next();
 
                     while (!cpf.equalsIgnoreCase(conta.getCpfDoUsuario())){
@@ -66,7 +65,6 @@ public class Main {
                     }
 
                     System.out.print("Insira sua senha: ");
-                    // Atenção
                     senha = scan.next();
 
                     while (!senha.equalsIgnoreCase(conta.getSenhaDoUsuario())){
